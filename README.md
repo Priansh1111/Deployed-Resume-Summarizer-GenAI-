@@ -36,3 +36,6 @@ streamlit (for web interface)
 PyPDF2 / pdfplumber / python-docx (for extracting text from resumes)
 
 openai (for text summarization)
+
+Run the code: streamlit run app.py (To open the website on a localhost)
+
