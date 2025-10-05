@@ -1,0 +1,27 @@
+import json
+
+# Sample data — you can generate more using ChatGPT or OpenAI API later
+data = [
+    {
+        "resume_text": """John Doe is a seasoned software engineer with 5 years of experience in full-stack development. 
+        He has worked at Infosys and Capgemini, focusing on Python, JavaScript, React, and cloud technologies such as AWS. 
+        He holds a B.Tech in Computer Science and is a certified AWS Solutions Architect.""",
+        "summary": "Software engineer with 5 years of experience in full-stack development, skilled in Python and AWS."
+    },
+    {
+        "resume_text": """Jane Smith is a data analyst with 3 years of experience working at Deloitte. 
+        She specializes in SQL, Excel, Tableau, and data storytelling. She has a degree in Statistics from the University of California.""",
+        "summary": "Data analyst with 3 years of experience at Deloitte, skilled in SQL, Tableau, and data visualization."
+    },
+    {
+        "resume_text": """Michael Johnson is a machine learning engineer who has worked at Google AI and DeepMind. 
+        He has 6 years of experience building ML models in Python and TensorFlow, and has published research in NeurIPS.""",
+        "summary": "ML engineer with 6 years' experience at Google AI and DeepMind, proficient in TensorFlow."
+    }
+]
+
+# Save as JSON
+with open("resume_dataset.json", "w") as f:
+    json.dump(data, f, indent=4)
+
+print(" Dataset generated: resume_dataset.json")
